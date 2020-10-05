@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ExObject.fromEntries</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let object = ([
+            ["banana", 1],
+            ["orange", 2]
+            ]);
+            
+            console.log(object);
+            console.log(object.length);
+            
+            let prices = Object.fromEntries(object);
+
+            console.log(prices.orange)
+        </script>
+    </body>
+</html>
