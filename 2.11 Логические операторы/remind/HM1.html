@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW1</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let user = prompt("How are you?");
+
+           if (user == "admin") {
+               let password = prompt("Password, pleas");
+
+               if (password == "1111") {
+                   alert("Hello!");
+               } else if (password == '' || password == null || password == underfind || password == false) {
+                alert("Cancel");
+               } else {
+                   alert("Is't correct");
+               }
+
+           } else if (user == '' || user == null || user == underfind || user == false) {
+               alert("Cancel");
+
+           } else {
+               alert("I don't know how are you");
+           };
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>symbolInObject</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let id = Symbol("id");
+
+           let user = {
+               name: "Andrey",
+               age: 19,
+               [id]: 123,
+           };
+
+           for (let key in user) 
+               alert(key);
+               alert("Напрямую " + user[id]);
+           
+        </script>
+    </body>
+
+
+</html>

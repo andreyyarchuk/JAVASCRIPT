@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW3 2.11</title>
+    </head>
+
+    <body>
+        <script>
+           let a = prompt("Who's there?"); // Пользователь вводит имя
+
+           if (a == "admin") { //Запуск ветки если зашёл админ
+               let b = prompt("Password");
+
+               if (b == "boss") { // ЗАпуск ветки, если админ ввёл нужный пароль
+                   alert("Hello");
+               } else if (b == "" || b == null) { // Запуск вветки, если админ вышел
+                   alert("Exit");
+               } else {
+                   alert("It isn't good password"); // Запуск вветки, если админ ввёл не тот пароль
+               }
+           } else if (a == "" || a == null) { // Запуск ветки, если пользователь отменил
+               alert("Exit");
+           } else {
+               alert("I don't know you"); // Запуск ветки, если это непонятно кто
+           }
+        </script>
+    </body>
+
+
+</html>

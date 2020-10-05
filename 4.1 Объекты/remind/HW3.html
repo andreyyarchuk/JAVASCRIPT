@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW3</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+            };
+            
+            function getSum( salaries ) {
+                let sum = 0;
+                for ( let key in salaries ) {
+                    sum += salaries[key];
+                }
+
+                return sum;
+            }
+
+            alert( getSum(salaries) );
+        </script>
+    </body>
+
+
+</html>

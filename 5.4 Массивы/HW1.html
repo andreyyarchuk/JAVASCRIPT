@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW2</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let styles = ["Джас", "Блюз"]
+           alert(styles);
+
+           styles.push("Рок-н-ролл"); //Джас", "Блюз" Рок-н-ролл" 
+           alert(styles);
+
+           styles[2] = "Классика"; //Джас", "Блюз" Классика
+           styles.push("Рок-н-ролл"); //Джас", "Блюз" Классика Рок-н-ролл
+           alert(styles);
+
+           styles.shift(); //"Блюз" Классика Рок-н-ролл
+           alert(styles);
+
+           styles.unshift("Реп", "Регги"); //Реп", "Регги""  "Блюз" Классика Рок-н-ролл 
+           alert(styles);
+
+
+
+        </script>
+    </body>
+
+
+</html>

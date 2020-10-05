@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW2</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           function checkSpam(str) {
+
+            let newStr = str.toLowerCase();
+
+            return alert( newStr.includes('viagra') || newStr.includes('xxx') );
+
+           }
+           
+           checkSpam("innocent rabbit");
+           checkSpam('buy ViAgRA now');
+           checkSpam('free xxxxx');
+        </script>
+    </body>
+
+
+</html>

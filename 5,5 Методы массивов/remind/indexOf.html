@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>indexOf, lastIndexOf, includes</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        // arr.indexOf(item, from) ищет item, начиная с индекса from,
+        // и возвращает индекс, на котором был найден искомый элемент,
+        // в противном случае -1.
+
+        // arr.lastIndexOf(item, from) – то же самое,
+        // но ищет справа налево.
+
+        // arr.includes(item, from) – ищет item, начиная с индекса from,
+        // и возвращает true, если поиск успешен.
+
+       let arr = ["I", "love", "prog"];
+
+        alert(arr.indexOf("i", 0));
+        alert(arr.lastIndexOf("I", 0));
+        alert(arr.includes("I", 0));
+    </script>
+</body>
+
+
+</html>

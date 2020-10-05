@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW3 2.14</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let ask = function(question, yes, no) {
+               if (confirm(question)) yes()
+               else no();
+           }
+
+           let showOk = function() {
+               alert("You Ok");
+           }
+
+           let showCancel = function() {
+               alert("You cancel");
+           }
+
+           ask("YOu are right?", showOk, showCancel);
+        </script>
+    </body>
+
+
+</html>

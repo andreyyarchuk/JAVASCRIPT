@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>new.target</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            function User() {
+                this.name = name;
+                this.isAdmin = true;
+                alert(new.target);
+            }
+
+            let user = new User ("Andrey");
+
+            alert(user.name);
+            alert(user.isAdmin);
+            new User();
+        </script>
+    </body>
+</html>

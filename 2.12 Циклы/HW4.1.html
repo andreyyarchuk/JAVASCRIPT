@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW4.1 2.12</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let interval = prompt("Вбейте число, до которого надо искать");
+
+            stop:
+            for (let i = 2; i < interval; ++i) {
+
+                for( let j = 2; j < i; ++j) {
+                    if (i % j == 0) continue stop;
+                } alert(i);
+            }
+        </script>
+    </body>
+</html>

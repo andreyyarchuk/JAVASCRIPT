@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW3</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           function multiplyNumeric(obj) {
+               for (let key in obj) {
+                   if ( typeof obj[key] == "number" ) {
+                    obj[key] = obj[key] * 2;
+                   }
+               }
+           }
+
+           let obj = {
+                width: 200,
+                height: 300,
+                title: "My menu"
+            };
+
+            alert( obj.height );
+
+            multiplyNumeric(obj);
+
+            alert( obj.height );
+        </script>
+    </body>
+
+
+</html>

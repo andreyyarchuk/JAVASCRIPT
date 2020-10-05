@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW1.1 2.16</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let ask = (question, yes, no) => {
+               if (confirm(question)) yes()
+               else no();
+           };
+
+            ask("You're right",
+            () => alert("Вы согласились."),
+            () => alert("Вы отменили выполнение.")
+            );
+        </script>
+    </body>
+
+
+</html>

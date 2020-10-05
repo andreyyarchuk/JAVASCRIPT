@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        // Метод arr.forEach позволяет запускать функцию для каждого элемента массива.
+
+        // arr.forEach(function(item, index, array) {
+        //     // ... делать что-то с item
+        // });
+
+
+        // ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+        //     alert(`${item} имеет позицию ${index} в ${array}`);
+        // });
+
+
+
+         let arr  = ["Bilbo", "Gandalf", "Nazgul"];
+
+        // arr.forEach( function(item) {
+        //     return  console.log(item.length);
+        // });
+
+        arr.forEach( (item) => console.log(item.length) );
+    </script>
+</body>
+
+
+</html>

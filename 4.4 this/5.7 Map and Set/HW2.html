@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Фильтр анаграмм</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            function anclean() {
+                let map = new Map();
+                for ( let key of arr ) {
+                    let toLow = key.toLowerCase();
+                    let toArr = toLow.split("");
+                    let sort = toArr.sort();
+                    let joinKey = sort.join("");
+                    map.set(joinKey, key);
+                }
+
+                    return Array.from(map.values());                        
+            }
+
+            let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+            
+            console.log( anclean(arr) );
+        </script>
+    </body>
+</html>

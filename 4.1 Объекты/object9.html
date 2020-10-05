@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>object7</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let user = { name: "John" };
+
+            let permissions1 = { canView: true };
+            let permissions2 = { canEdit: true };
+
+            Object.assign( user, permissions1, permissions2 );
+
+            for ( let data in user ) {
+                alert(data);
+                alert( user[data] );
+            }
+        </script>
+    </body>
+</html>

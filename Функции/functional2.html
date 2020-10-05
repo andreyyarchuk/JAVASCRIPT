@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Function2</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+
+           let userName = " Андрей";
+
+           function sayHi() {
+               let userName = "Игорь"; // let делает переменную локальной
+               alert("HI! " + userName);
+           }
+           
+           alert(userName);
+           sayHi();
+           alert(userName);
+        </script>
+    </body>
+
+
+</html>

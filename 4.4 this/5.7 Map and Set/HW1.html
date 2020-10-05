@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>object7</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let arr = [];
+
+            function unique(arr) {
+                return Array.from( new Set(arr) );
+            }
+
+            let values = ["Hare", "Krishna", "Hare", "Krishna",
+            "Krishna", "Krishna", "Hare", "Hare", ":-O"
+            ];
+
+            alert( unique(values) ); // Hare, Krishna, :-O
+        </script>
+    </body>
+</html>

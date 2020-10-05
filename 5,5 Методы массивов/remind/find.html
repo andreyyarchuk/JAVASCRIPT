@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>indexOf, lastIndexOf, includes</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        // Функция вызывается по очереди для каждого элемента массива:
+        // let result = arr.find(function (item, index, array) {
+        //     если true - возвращается текущий элемент и переборпрерывается
+        //     если все итерации оказались ложными, возвращается undefined
+        // });
+
+        let users = [{
+                id: 1,
+                name: "Вася"
+            },
+            {
+                id: 2,
+                name: "Петя"
+            },
+            {
+                id: 3,
+                name: "Маша"
+            }
+        ];
+
+        // let user = users.find(item => item.id == 1);
+
+        let user = users.find( function(item) {
+            return (item.id == 1);
+        } );
+
+        alert(user.name); 
+    </script>
+</body>
+
+
+</html>

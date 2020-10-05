@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex2: перебор Map и Set</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let boxMap = new Map();
+
+            boxMap.set("cap", "tea")
+            .set("phone", "redmi")
+            .set("bottle", "water");
+
+            for (let thing of boxMap.keys()) {
+                console.log("thing " + thing);
+            }
+
+            for (let inThing of boxMap.values()) {
+                console.log("inThing " + inThing)
+            }
+
+            for (let pairInBox of boxMap.entries()) {
+                console.log("pairInBox " + pairInBox)
+            }
+
+            for (let thing of boxMap.keys()) {
+                let i = thing;
+
+                for (let inThing of boxMap.values()) {
+                console.log(thing+ "" + inThing)
+            }
+            }
+        </script>
+    </body>
+</html>

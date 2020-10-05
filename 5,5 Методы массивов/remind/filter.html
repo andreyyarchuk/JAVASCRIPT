@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>filters</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        // Метод find ищет один (первый попавшийся) элемент, на котором функция-колбэк вернёт true.
+        // let results = arr.filter(function (item, index, array) {
+        //      если true - элемент добавляется к результату, и перебор продолжается
+        //      возвращается пустой массив в случае, если ничего не найдено
+        // });
+
+            let users = [
+                {id: 1, name: "Вася"},
+                {id: 2, name: "Петя"},
+                {id: 3, name: "Машfffа"}
+            ];
+
+            let results = users.filter(item => item.name.length < 6);
+
+            alert(results.length);
+    </script>
+</body>
+
+
+</html>

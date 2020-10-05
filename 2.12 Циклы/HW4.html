@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW4 2.12</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let i = prompt(); // Задаём интервал
+            
+            nextProm: // Метка
+            for (let j = 2; j <= i; ++j) { // Цикл для интервала
+
+                for (let k = 2; k < j; ++k) { // Цикл для чисел до числа в цикле
+                    if (j % k == 0) continue nextProm; // Условие: если число делится на все числа до него без остатка
+                }
+                alert(j);
+            }
+        </script>
+    </body>
+</html>

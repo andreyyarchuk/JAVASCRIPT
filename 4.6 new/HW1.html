@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW1</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            function Calculator() {
+                this.read = function() {
+                    this.a = +prompt();
+                    this.b = +prompt();
+                };
+                this.sum = function() {
+                    return this.a + this.b;
+                };
+                this.mul = function() {
+                    return this.a * this.b;
+                };
+            };
+
+            let calculator = new Calculator();
+            calculator.read();
+
+            alert( calculator.sum() );
+            alert( calculator.mul() );
+        </script>
+    </body>
+</html>

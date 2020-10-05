@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW3</title>
+    </head>
+
+    <body>
+        <script>
+           "use strict";
+            let n = prompt("Input n")
+
+            next:
+            for (let num = 2; num <= n; ++num) {
+
+                for (let i = 2; i < num; ++i) {
+                    if (num % i == 0) continue next;
+                };
+
+                alert(num);
+            }
+        
+        </script>
+    </body>
+
+</html>

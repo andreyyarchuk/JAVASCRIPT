@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex2.1: перебор Map и Set</title>
+    </head>
+
+    <body>
+        <script>
+            "use strict";
+
+            let boxMap = new Map();
+
+            boxMap.set("bottle", 500)
+            .set("milk", 200)
+            .set("cola", 100);
+
+            boxMap.forEach((key, value, map) => { // не понимаю, почему выведет 500: bottle, а не bottle: 500
+                console.log(`${key}: ${value}`);
+            });
+        </script>
+    </body>
+</html>
